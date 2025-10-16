@@ -1,0 +1,14 @@
+    *.bak
+    *.bck
+    *.dcm
+    *.lib-bak
+    *.net
+    *.rpt
+    *.cmp
+    *.log
+    *.gbr
+    *.drl
+    *.pos
+    *.kicad_wks
+    *.kicad_mod-bak
+    *.kicad_sym-bak
