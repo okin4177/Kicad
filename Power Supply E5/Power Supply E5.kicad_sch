@@ -2316,25 +2316,23 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "IC"
-				(at 34.29 7.62 0)
+			(property "Reference" "U1"
+				(at 19.05 7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
 				)
 			)
-			(property "Value" "LM2592HVT-5.0_NOPB"
-				(at 34.29 5.08 0)
+			(property "Value" "LM2592"
+				(at 19.05 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
 				)
 			)
-			(property "Footprint" "TO170P470X1028X2142-5P"
+			(property "Footprint" "Components:TO170P470X1028X2142-5P"
 				(at 34.29 -94.92 0)
 				(effects
 					(font
@@ -2444,16 +2442,16 @@
 					)
 				)
 				(pin passive line
-					(at 0 -2.54 0)
+					(at 0 -5.08 0)
 					(length 5.08)
-					(name "OUTPUT"
+					(name "~{ON}/OFF"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "2"
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2462,7 +2460,7 @@
 					)
 				)
 				(pin passive line
-					(at 0 -5.08 0)
+					(at 17.78 -12.7 90)
 					(length 5.08)
 					(name "GROUND"
 						(effects
@@ -2498,16 +2496,16 @@
 					)
 				)
 				(pin passive line
-					(at 38.1 -2.54 180)
+					(at 38.1 -6.35 180)
 					(length 5.08)
-					(name "~{ON}/OFF"
+					(name "OUTPUT"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "5"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2877,18 +2875,6 @@
 		(uuid "c13c1ee4-e92c-4b96-a7dd-4f0b90acd233")
 	)
 	(junction
-		(at 179.07 50.8)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "031cfbfc-d415-49ef-b13c-e80036caac5d")
-	)
-	(junction
-		(at 246.38 27.94)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "062b29fa-4cb8-4bd8-8665-cd75eec2cc16")
-	)
-	(junction
 		(at 162.56 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2919,6 +2905,12 @@
 		(uuid "1230cbb5-3d1f-4c2d-90cf-e0e4d75c13cb")
 	)
 	(junction
+		(at 196.85 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "12a37742-7312-492b-b02c-d8ce726a1ab6")
+	)
+	(junction
 		(at 133.35 25.4)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2947,6 +2939,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "38a03634-42b9-4203-be45-c01202dc7b0f")
+	)
+	(junction
+		(at 177.8 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "48bdadbc-4889-4872-a838-4da25aa28701")
 	)
 	(junction
 		(at 194.31 135.89)
@@ -2991,6 +2989,12 @@
 		(uuid "8527944a-c504-49fb-a9aa-9c712068e6e3")
 	)
 	(junction
+		(at 217.17 31.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "85b0ec90-9e18-4a10-9429-0cbfbbf75ddb")
+	)
+	(junction
 		(at 171.45 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3003,10 +3007,10 @@
 		(uuid "8b8f6e26-1291-4d78-b4d2-ba10b7045f44")
 	)
 	(junction
-		(at 172.72 50.8)
+		(at 246.38 31.75)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "90dd0adb-130a-474d-9b4f-9ea162ad033e")
+		(uuid "8ba8d39f-7ef8-4255-a509-81031d92b534")
 	)
 	(junction
 		(at 133.35 38.1)
@@ -3061,12 +3065,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b8f11571-8c77-4f12-879e-e85c3327efd0")
-	)
-	(junction
-		(at 217.17 27.94)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bc2e4dc4-71a6-4fa8-a5fd-967801693585")
 	)
 	(junction
 		(at 232.41 114.3)
@@ -3156,7 +3154,7 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 27.94) (xy 246.38 27.94)
+			(xy 236.22 31.75) (xy 246.38 31.75)
 		)
 		(stroke
 			(width 0)
@@ -3256,6 +3254,16 @@
 	)
 	(wire
 		(pts
+			(xy 196.85 50.8) (xy 217.17 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19c471c6-0f4a-4618-b3b4-765c14c452e7")
+	)
+	(wire
+		(pts
 			(xy 232.41 135.89) (xy 247.65 135.89)
 		)
 		(stroke
@@ -3316,7 +3324,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 27.94) (xy 246.38 34.29)
+			(xy 246.38 25.4) (xy 246.38 31.75)
 		)
 		(stroke
 			(width 0)
@@ -3476,7 +3484,7 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 27.94) (xy 228.6 27.94)
+			(xy 217.17 31.75) (xy 228.6 31.75)
 		)
 		(stroke
 			(width 0)
@@ -3503,16 +3511,6 @@
 			(type default)
 		)
 		(uuid "50c8340d-5ad1-4635-8adf-d674f13c2f7f")
-	)
-	(wire
-		(pts
-			(xy 179.07 27.94) (xy 172.72 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "51249c96-e377-4bcf-8808-817b59c43f6b")
 	)
 	(wire
 		(pts
@@ -3616,16 +3614,6 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 50.8) (xy 217.17 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7a355c9a-a246-45e3-818a-7264374a263e")
-	)
-	(wire
-		(pts
 			(xy 133.35 38.1) (xy 133.35 109.22)
 		)
 		(stroke
@@ -3633,16 +3621,6 @@
 			(type default)
 		)
 		(uuid "7af8a8a4-176c-4f19-874a-7db705b386e4")
-	)
-	(wire
-		(pts
-			(xy 246.38 25.4) (xy 246.38 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7cfbda78-47c0-46f4-86bc-2af8b3d3205e")
 	)
 	(wire
 		(pts
@@ -3866,7 +3844,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 27.94) (xy 172.72 50.8)
+			(xy 177.8 30.48) (xy 177.8 50.8)
 		)
 		(stroke
 			(width 0)
@@ -3926,16 +3904,6 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 50.8) (xy 179.07 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b991095a-9b5a-42d6-b796-88e3766b80ac")
-	)
-	(wire
-		(pts
 			(xy 232.41 114.3) (xy 236.22 114.3)
 		)
 		(stroke
@@ -3966,7 +3934,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 50.8) (xy 172.72 50.8)
+			(xy 162.56 50.8) (xy 177.8 50.8)
 		)
 		(stroke
 			(width 0)
@@ -4066,13 +4034,33 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 27.94) (xy 217.17 35.56)
+			(xy 217.17 31.75) (xy 217.17 35.56)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "cb92d5dc-a124-4d4b-b403-c63654caccb4")
+	)
+	(wire
+		(pts
+			(xy 177.8 30.48) (xy 180.34 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce06f35d-26e2-45c0-8556-38b8c87f5117")
+	)
+	(wire
+		(pts
+			(xy 246.38 31.75) (xy 246.38 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d15cced6-ed94-40cb-ab99-87b1a1d50a2c")
 	)
 	(wire
 		(pts
@@ -4156,6 +4144,16 @@
 	)
 	(wire
 		(pts
+			(xy 177.8 50.8) (xy 196.85 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3e44df2-bff2-4400-af6f-f07dd57dcd90")
+	)
+	(wire
+		(pts
 			(xy 133.35 25.4) (xy 133.35 27.94)
 		)
 		(stroke
@@ -4166,7 +4164,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 30.48) (xy 179.07 50.8)
+			(xy 196.85 38.1) (xy 196.85 50.8)
 		)
 		(stroke
 			(width 0)
@@ -5382,7 +5380,7 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 232.41 27.94 270)
+		(at 232.41 31.75 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5390,7 +5388,7 @@
 		(dnp no)
 		(uuid "5b9d7d24-86b7-49af-a269-621e21d8a52a")
 		(property "Reference" "L5v1"
-			(at 232.41 32.512 90)
+			(at 232.41 36.322 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5398,7 +5396,7 @@
 			)
 		)
 		(property "Value" "330uH"
-			(at 232.41 30.48 90)
+			(at 232.41 34.29 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5406,7 +5404,7 @@
 			)
 		)
 		(property "Footprint" "Inductor_THT:L_Axial_L7.0mm_D3.3mm_P5.08mm_Vertical_Fastron_MICC"
-			(at 232.41 27.94 0)
+			(at 232.41 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5415,7 +5413,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 232.41 27.94 0)
+			(at 232.41 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5424,7 +5422,7 @@
 			)
 		)
 		(property "Description" "Inductor"
-			(at 232.41 27.94 0)
+			(at 232.41 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5604,8 +5602,137 @@
 		)
 	)
 	(symbol
+		(lib_id "TL2575-05IKV:TL2575-05IKV")
+		(at 177.8 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6d37f8c6-6c06-4731-9219-cdc318b85cbe")
+		(property "Reference" "Q2"
+			(at 194.31 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TL2575-05IKV"
+			(at 194.31 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Components:TO170P470X1016X2338-5P"
+			(at 212.09 209.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/tl2575-05"
+			(at 212.09 309.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Texas Instruments, TL2575-05IKV Switching Regulator 1A Adjustable, 4.75  5.25 V, 5-Pin TO-220"
+			(at 177.8 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "4.7"
+			(at 212.09 509.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "595-TL2575-05IKV"
+			(at 212.09 609.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TL2575-05IKV?qs=EnLMdcWnKABqEG9hbRVmBQ%3D%3D"
+			(at 212.09 709.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Texas Instruments"
+			(at 212.09 809.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "TL2575-05IKV"
+			(at 212.09 909.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "f156d8e8-c02f-4cf5-9e28-601f80d32f46")
+		)
+		(pin "5"
+			(uuid "a182530d-1518-4fb2-b94f-a834d0d51e06")
+		)
+		(pin "1"
+			(uuid "da17ccec-ea55-4ec4-8c66-1d2628daf0ee")
+		)
+		(pin "2"
+			(uuid "76385119-b0f3-4562-bb5c-89b52688c182")
+		)
+		(pin "3"
+			(uuid "5244a349-86b3-464d-9ed5-07b4810a419e")
+		)
+		(instances
+			(project "Power Supply E5"
+				(path "/8c485092-ddbd-4129-9181-27eb22142946"
+					(reference "Q2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 179.07 50.8 180)
+		(at 196.85 50.8 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5614,7 +5741,7 @@
 		(fields_autoplaced yes)
 		(uuid "79a9c8aa-943a-4790-82f6-f63dfa797ed4")
 		(property "Reference" "#FLG04"
-			(at 179.07 52.705 0)
+			(at 196.85 52.705 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5623,7 +5750,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 179.07 55.88 0)
+			(at 196.85 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5631,7 +5758,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 179.07 50.8 0)
+			(at 196.85 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5640,7 +5767,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 179.07 50.8 0)
+			(at 196.85 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5649,7 +5776,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 179.07 50.8 0)
+			(at 196.85 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5765,7 +5892,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TO170P470X1016X2338-5P"
+		(property "Footprint" "Components:TO170P470X1016X2338-5P"
 			(at 207.01 160.96 0)
 			(effects
 				(font
@@ -5885,7 +6012,7 @@
 				)
 			)
 		)
-		(property "Value" "1N4007"
+		(property "Value" "1N5059"
 			(at 126.746 41.656 0)
 			(effects
 				(font
@@ -5980,7 +6107,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TO170P470X1028X2142-5P"
+		(property "Footprint" "Components:TO170P470X1028X2142-5P"
 			(at 213.36 120.32 0)
 			(effects
 				(font
@@ -6337,7 +6464,7 @@
 				)
 			)
 		)
-		(property "Value" "1N4007"
+		(property "Value" "1N5059"
 			(at 125.73 21.59 0)
 			(effects
 				(font
@@ -6608,135 +6735,6 @@
 		)
 	)
 	(symbol
-		(lib_id "TL2575-05IKV:TL2575-05IKV")
-		(at 177.8 114.3 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ce243519-18cf-429c-a982-dcd33854e2cd")
-		(property "Reference" "Q2"
-			(at 194.31 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TL2575-05IKV"
-			(at 194.31 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "TO170P470X1016X2338-5P"
-			(at 212.09 209.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/tl2575-05"
-			(at 212.09 309.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "Texas Instruments, TL2575-05IKV Switching Regulator 1A Adjustable, 4.75  5.25 V, 5-Pin TO-220"
-			(at 177.8 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "4.7"
-			(at 212.09 509.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "595-TL2575-05IKV"
-			(at 212.09 609.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TL2575-05IKV?qs=EnLMdcWnKABqEG9hbRVmBQ%3D%3D"
-			(at 212.09 709.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Texas Instruments"
-			(at 212.09 809.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "TL2575-05IKV"
-			(at 212.09 909.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "5"
-			(uuid "8a33dd51-b097-44ac-b784-5660b9adcf8f")
-		)
-		(pin "1"
-			(uuid "29e1a236-78eb-4495-9225-6c699e8186fc")
-		)
-		(pin "2"
-			(uuid "e3576457-28d5-4ae0-9fdf-dae7d50b6936")
-		)
-		(pin "3"
-			(uuid "a16f0509-f312-4ade-914e-fd00b2345b8b")
-		)
-		(pin "4"
-			(uuid "cc62f21f-1f91-4b9b-8c8f-dfcd5af1dce8")
-		)
-		(instances
-			(project ""
-				(path "/8c485092-ddbd-4129-9181-27eb22142946"
-					(reference "Q2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 171.45 114.3 0)
 		(unit 1)
@@ -6821,7 +6819,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N4007"
+		(property "Value" "1N5059"
 			(at 135.89 33.0199 90)
 			(effects
 				(font
@@ -7058,7 +7056,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N4007"
+		(property "Value" "1N5059"
 			(at 110.744 33.02 90)
 			(effects
 				(font
